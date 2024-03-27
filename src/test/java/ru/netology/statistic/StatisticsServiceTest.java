@@ -23,8 +23,10 @@ public class StatisticsServiceTest {
         StatisticsService service = new StatisticsService();
 
         long[] incomesInBillions = {12, 5, 8, 14, 5, 3, 8, 6, 13, 11, 19};
-        long expected = 12;
+        long expected = 19;
 
         long actual = service.findMax(incomesInBillions);
+
+        Assertions.assertEquals(expected, actual);
     }
 }
